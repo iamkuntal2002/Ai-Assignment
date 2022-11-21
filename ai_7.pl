@@ -12,6 +12,7 @@ female(ann).
 female(sylvia).
 female(mary).
 
+
 brother(X,Y):-parent(Z,X),parent(Z,Y),male(X),X\==Y.
 uncle(X,Z):-brother(X,Y),parent(Y,Z).
 
